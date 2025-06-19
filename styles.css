@@ -1,0 +1,130 @@
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Centralizado e Responsivo */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #bee0f1;
+  color: white;
+}
+
+/* Logo com sombra */
+.logo-header img,
+.logo-horizontal img {
+  max-width: 120px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.4);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Seções */
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Accordion */
+.accordion {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  background-color: #f9f9f9;
+}
+
+/* Rodapé */
+footer {
+  background-color: #bee0f1;
+  color: rgb(12, 12, 12);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* ===============================
+   Responsividade para telas menores
+   =============================== */
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  .logo-header img,
+  .logo-horizontal img {
+    max-width: 90px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .accordion {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 15px;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
